@@ -125,9 +125,11 @@ header {
 }
 
 footer {
+  width: 100%;
   display: block;
   position: fixed;
   bottom: 0px;
+  right: 0px;
 }
 
 .btn {
