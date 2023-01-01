@@ -4,12 +4,11 @@
         padding:0px;
       }
       
-body{
+body {
     width: 100%;
-    background-color: rgb(68, 255, 239);
+    background: #33C4D7;
     background-repeat: no-repeat;
-    background-size: 90% ;
-    background-position: center;
+    background-size: 100% ;
     background-attachment: fixed;
 }
 /* 
@@ -102,28 +101,96 @@ li ul {
   color: #fff;
 }
 
+a:visited {
+  color: #fff;
+}
+
 /*
 NavBar Stule Ends
 */
 
+/*Content start*/
+
+.row {
+  display: flex;;
+}
+
 .col-md-1 {
   width: 100%;
   display: flex;
-  border: 1px solid black;
 }
 
 header {
   width: 100%;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bolder;
   text-align: center;
-} 
-
-.col-md-5 {
-  width: 50%;
-  border: 1px solid black;
+  color: white;
+  font-family: cursive;
+  font-style: italic;
 }
 
+.col-md-5 {
+  min-width: 300px;
+  width: 50%;
+  height: 417px;
+  display: inline-block;
+  position: relative;
+  top: 40px;
+}
+
+#subcontainer-1 {
+  height: 350px;
+  background-image: url(media/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.titlemap {
+  font-size: 40px;
+  font-family: cursive;
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+}
+
+#map {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  float: inline-start;
+  right: -15px;
+}
+
+.map-button {
+  position: relative;
+  min-width: 100x;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#map-button {
+  background: linear-gradient(90deg, 
+  rgba(255, 255, 255, 0) 0%, 
+  rgba(255, 255, 255, 0.2) 25%, 
+  rgba(255, 255, 255, 0.2) 75%, 
+  rgba(255, 255, 255, 0) 100%);
+   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+     inset 0 0 1px rgba(90, 84, 84, 0.6); 
+  color: #fff;
+  border: 1px solid white;
+}
+
+#map-button:hover {
+  color: #fff;
+  background-color: rgba(90, 84, 84, 0.6);
+}
+
+/*content end*/
+
+/*Footer start*/
 footer {
   width: 100%;
   display: block;
@@ -147,3 +214,4 @@ footer {
   right: 3px;
   top: 3px;
 }
+/*Footer end*/
