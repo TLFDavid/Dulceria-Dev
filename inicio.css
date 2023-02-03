@@ -1,20 +1,15 @@
 * {
   font-family: calibri, arial, "New Times Roman";
-        margin:0px;
-        padding:0px;
+  margin:0px;
+  padding:0px;
       }
       
 body {
     width: 100%;
-    background: #33C4D7;
-    background-repeat: no-repeat;
-    background-size: 100% ;
-    background-attachment: fixed;
+    background-color: rgba(199, 0, 0, 0.849);
 }
-/* 
-  *Navbar Style Start
-  *Make yours changes here to edit the Navbar 
-*/     
+
+/*NavBar Style Start*/
 #header {
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
@@ -67,17 +62,15 @@ li a {
   width: 200px;
   font-size: 15px;
   text-align: center;
-  background: linear-gradient(90deg, 
- rgba(255, 255, 255, 0) 0%, 
- rgba(255, 255, 255, 0.2) 25%, 
- rgba(255, 255, 255, 0.2) 75%, 
- rgba(255, 255, 255, 0) 100%);
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
-   inset 0 0 1px  rgba(90, 84, 84, 0.6); 
-  color: #fff;
+  background-color: transparent;
 }
       
 li a:hover {
+  background-color: rgba(90, 84, 84, 0.6);
+  color: #fff;
+}
+
+li a:active {
   background-color: rgba(90, 84, 84, 0.6);
   color: #fff;
 }
@@ -86,11 +79,6 @@ li ul {
   display: none;
   position: absolute;
   min-width: 140px;
-}
-      
-.nav li:hover > ul {
-  display: block;
-  color: #fff;
 }
 
 .navbar-brand {
@@ -105,14 +93,12 @@ a:visited {
   color: #fff;
 }
 
-/*
-NavBar Stule Ends
-*/
+/*NavBar Style Ends*/
 
 /*Content start*/
 
 .row {
-  display: flex;;
+  display: flex;
 }
 
 .col-md-1 {
@@ -125,7 +111,7 @@ header {
   font-size: 50px;
   font-weight: bolder;
   text-align: center;
-  color: white;
+  color: #292827;
   font-family: cursive;
   font-style: italic;
 }
@@ -139,12 +125,11 @@ header {
   top: 40px;
 }
 
-#subcontainer-1 {
-  height: 350px;
-  background-image: url(media/logo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.addlogo, .ubicacion{
+  box-sizing: border-box;
+  border: 1px solid #292827;
+  width: 90%;
+  height: 70%;
 }
 
 .titlemap {
@@ -214,4 +199,4 @@ footer {
   right: 3px;
   top: 3px;
 }
-/*Footer end*/
+/*Footer End*/
